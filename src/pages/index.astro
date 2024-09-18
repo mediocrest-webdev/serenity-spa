@@ -1,16 +1,21 @@
 ---
-
+import BaseLayout from "../layouts/BaseLayout.astro"
+import Hero from "../sections/Hero.astro"
+import Services from "../sections/Services.astro"
+import Features from "../sections/Features.astro"
+import Testimonial from "../components/Testimonial.astro"
+import Contact from "../sections/Contact.astro"
+import Gallery from "../sections/Gallery.astro"
+import FAQ from "../sections/FAQ.astro"
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout>
+	<main class="container mx-auto px-4 md:px-8 max-w-screen-xl min-h-dvh relative">
+		<Hero />
+		<Services />
+		<Features />
+		<Gallery />
+		<FAQ />
+		<Testimonial />
+		<Contact />
+	</main>
+</BaseLayout>

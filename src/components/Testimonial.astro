@@ -1,0 +1,39 @@
+---
+import TestimonialCards from "./TestimonialCards.astro";
+---
+
+<!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
+
+<section id="testimonials" class="py-6 my-6 lg:py-16 lg:my-16">
+    <!-- Header Content -->
+    <div class="flex flex-col items-center justify-between md:flex md:flex-row mb-8">
+        <div class="text-center md:text-left">
+            <span class="block text-lg font-semibold text-accent mb-xs">Reviews</span>
+            <h2 class="text-4xl font-medium leading-none tracking-tight mb-xs">What Our Happy Clients Say</h2>
+        </div>
+        <div class="text-center md:text-left">
+            <p class="text-gray-700 text-pretty">
+                Discover how our services have made a difference for our valued clients. Here are their thoughts and experiences.
+            </p>
+        </div>
+    </div>
+
+    <!-- Testimonial Cards -->
+    <ul class="flex flex-col gap-4 md:flex md:flex-row">
+        <TestimonialCards
+            review="The atmosphere is so calming, and their personalized approach made every visit feel special. Highly recommend!"
+            image="https://img.freepik.com/free-photo/confident-asian-woman-face-portrait-smiling_53876-144815.jpg?t=st=1726591510~exp=1726595110~hmac=af9bae84181b47f8c7643a7f26f8a075c4da3e27802f676020ed2a83212b7752&w=900"
+            name="Emily Davis"
+            position="Founder of Wellness Matters"
+        />
+        <TestimonialCards
+            review="Each session left me feeling rejuvenated. The staff truly cares about the client experience. I wouldn't go anywhere else."
+            image="https://img.freepik.com/free-photo/front-close-view-young-female-dark-jacket-smiling-pink-background_179666-30965.jpg?t=st=1726591623~exp=1726595223~hmac=51521dcc6565b5a1f0b6ac654e238246048ab462c866d521966e32120953de13&w=900"
+            name="Anne Brown"
+            position="Owner of The Vibe Arcovia"
+        />
+    </ul>
+</section>
+

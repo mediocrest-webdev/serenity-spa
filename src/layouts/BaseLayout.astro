@@ -1,0 +1,18 @@
+---
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
+import "../styles/global.css";
+---
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serenity Spa</title>
+</head>
+<body class="bg-slate-50">
+    <Navbar />
+    <slot/>
+    <Footer />
+</body>
+</html>

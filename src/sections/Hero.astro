@@ -1,0 +1,44 @@
+---
+import Button from "../components/Button.astro";
+---
+
+<!-- Hero -->
+<section id="#" class="relative overflow-hidden py-6 sm:py-8 lg:py-12">
+  <div class="max-w-2xl text-center mx-auto">
+    <h1 class="block text-3xl font-bold text-accent sm:text-4xl md:text-5xl leading-none tracking-tight">
+      Experience Holistic Wellness and Personalized Care
+    </h1>
+    <p class="mt-3 text-base md:text-lg text-gray-700">
+      Serenity Spa provides expert spa services that rejuvenate your body, soothe your mind, and promote overall well-being.
+    </p>
+  </div>
+
+  <div class="mt-10 relative">
+    <!-- Video container (always visible) -->
+    <video id="hero-video" class="w-full h-96 sm:h-[480px] object-cover rounded-xl" loop controls>
+      <source src="./videos/hero-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Play button and overlay -->
+    <div class="absolute inset-0 size-full">
+      <div class="flex flex-col justify-center items-center size-full">
+        <button id="play-button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none">
+          <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="5 3 19 12 5 21 5 3" />
+          </svg>
+          Play the overview
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Hero -->
+
+<script is:inline>
+  document.getElementById('play-button').addEventListener('click', function() {
+    var video = document.getElementById('hero-video');
+    video.play(); // Start video playback
+    this.style.display = 'none'; // Hide the play button
+  });
+</script>

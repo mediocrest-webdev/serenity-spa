@@ -1,0 +1,23 @@
+---
+const { review, image, name, position} = Astro.props;
+---
+<li class="p-8 border-2 shadow-sm rounded-2xl">
+    <img class="mb-xs" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/quote-left-green.svg" decoding="async" alt="quote icon" width="40" height="46">
+    <p class="text-xl leading-snug mb-md">
+        {review}
+    </p>
+    <div class="flex items-center gap-4">
+        <picture class="picture">
+            <img class="profile" src={image} decoding="async" alt="profile" width="50" height="50" aria-hidden="true">
+        </picture>
+        <div class="flex flex-col">
+            <p class="font-semibold">{name}</p>
+            <p class="text-gray-700">{position}</p>
+        </div>
+    </div>
+</li>
+
+<!-- This platform is one of the best companies I have dealt with in Indonesia. They’re always happy to help, and I wouldn’t hesitate to recommend them. -->
+ <!-- https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile2.jpg -->
+<!-- Anne Brown -->
+ <!-- Landscape Web Customer -->
