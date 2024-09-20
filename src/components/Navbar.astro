@@ -4,23 +4,23 @@ import Button from "./Button.astro";
 
 <header>
   <!-- Navigation bar -->
-  <nav class="bg-slate-50 sticky w-full z-20 top-0 start-0">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-4 md:p-8">
+  <nav class="top-0 z-20 w-full bg-slate-50 start-0">
+    <div class="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto lg:px-8">
       
       <!-- Logo and site name -->
       <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <span class="self-center text-xl lg:text-2xl tracking-tight font-semibold whitespace-nowrap text-accent">
+        <span class="text-xl font-semibold tracking-tight whitespace-nowrap text-accent">
           Serenity Spa
         </span>
       </a>
       
       <!-- Action buttons and menu toggle button -->
-      <div class="flex md:order-2 space-x-3 rtl:space-x-reverse">
+      <div class="flex space-x-3 md:order-2 rtl:space-x-reverse">
         <!-- Inquire Now button -->
-        <Button style="flex items-center gap-2 bg-accent cursor-pointer hover:opacity-80 hover:scale-105 hover:transition-all focus:ring-4 focus:outline-none focus:ring-primary font-medium rounded-full text-sm px-4 py-2 hidden lg:flex" link="tel:09123456789" text="Inquire Now" />
+        <Button style="flex items-center gap-2 bg-accent cursor-pointer hover:opacity-80 hover:scale-105 hover:transition-all focus:ring-4 focus:outline-none focus:ring-primary font-medium rounded-full  px-4 py-2 hidden lg:flex" link="tel:09123456789" text="Inquire Now" />
         
         <!-- Mobile menu toggle button -->
-        <button id="menu-toggle" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
+        <button id="menu-toggle" type="button" class="inline-flex items-center justify-center w-10 h-10 p-2 text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
           <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
@@ -30,28 +30,28 @@ import Button from "./Button.astro";
       
       <!-- Navigation links (hidden on mobile, visible on larger screens) -->
       <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-        <ul class="flex flex-col p-2 md:p-4 mt-2 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-4 lg:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-slate-50">
+        <ul class="flex flex-col p-2 mt-2 font-medium border border-gray-100 rounded-lg md:p-4 bg-gray-50 md:space-x-4 lg:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-slate-50">
           <!-- Navigation items -->
           <li>
-            <a href="/" class="block py-2 px-3 text-white bg-accent rounded md:bg-transparent md:text-accent md:p-0 text-sm" aria-current="page">Home</a>
+            <a href="/" class="block px-3 py-2 text-white rounded bg-accent md:bg-transparent md:text-accent md:p-0 " aria-current="page">Home</a>
           </li>
           <li>
-            <a href="#services" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-accent md:p-0 text-sm">Services</a>
+            <a href="#services" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-accent md:p-0 ">Services</a>
           </li>
           <li>
-            <a href="#features" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-accent md:p-0 text-sm">Features</a>
+            <a href="#features" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-accent md:p-0 ">Features</a>
           </li>
           <li>
-            <a href="#gallery" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-accent md:p-0 text-sm">Gallery</a>
+            <a href="#gallery" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-accent md:p-0 ">Gallery</a>
           </li>
           <li>
-            <a href="#faq" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-accent md:p-0 text-sm">FAQs</a>
+            <a href="#faq" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-accent md:p-0 ">FAQs</a>
           </li>
           <li>
-            <a href="#testimonials" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-accent md:p-0 text-sm">Testimonials</a>
+            <a href="#testimonials" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-accent md:p-0 ">Testimonials</a>
           </li>
           <li>
-            <a href="#contact" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-accent md:p-0 text-sm">Contact</a>
+            <a href="#contact" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-accent md:p-0 ">Contact</a>
           </li>
         </ul>
       </div>

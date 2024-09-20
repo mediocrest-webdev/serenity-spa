@@ -1,44 +1,33 @@
 ---
-import Button from "../components/Button.astro";
+
 ---
 
 <!-- Hero -->
-<section id="#" class="relative overflow-hidden py-6 sm:py-8 lg:py-12">
-  <div class="max-w-2xl text-center mx-auto">
-    <h1 class="block text-3xl font-bold text-accent sm:text-4xl md:text-5xl leading-none tracking-tight">
-      Experience Holistic Wellness and Personalized Care
+<section
+  id="#"
+  class="relative md:space-y-8 mb-lg"
+>
+  <div class="max-w-5xl py-8 mx-auto space-y-4 text-center">
+    <h1 class="mx-auto text-5xl font-bold leading-none tracking-tight text-balance text-accent">
+      Premium Massage, Facial, Waxing, and Spa Services at Serenity Spa
     </h1>
-    <p class="mt-3 text-base md:text-lg text-gray-700">
-      Serenity Spa provides expert spa services that rejuvenate your body, soothe your mind, and promote overall well-being.
+    <p class="mx-auto text-base leading-normal text-secondary text-pretty">
+      Serenity Spa provides expert spa services that rejuvenate your body, soothe your mind, and
+      promote overall well-being.
     </p>
   </div>
 
-  <div class="mt-10 relative">
-    <!-- Video container (always visible) -->
-    <video id="hero-video" class="w-full h-96 sm:h-[480px] object-cover rounded-xl" loop controls>
-      <source src="./videos/hero-video.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-
-    <!-- Play button and overlay -->
-    <div class="absolute inset-0 size-full">
-      <div class="flex flex-col justify-center items-center size-full">
-        <button id="play-button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none">
-          <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <polygon points="5 3 19 12 5 21 5 3" />
-          </svg>
-          Play the overview
-        </button>
-      </div>
+  <div class="relative">
+    <div>
+      <img
+        src="./images/hero-img.jpg"
+        width="1200"
+        height="480"
+        alt="Woman waxing a client's underarm"
+        title="Woman waxing a client's underarm"
+        class="w-full h-96 sm:h-[480px] object-cover rounded-xl"
+      />
     </div>
   </div>
 </section>
 <!-- End Hero -->
-
-<script is:inline>
-  document.getElementById('play-button').addEventListener('click', function() {
-    var video = document.getElementById('hero-video');
-    video.play(); // Start video playback
-    this.style.display = 'none'; // Hide the play button
-  });
-</script>

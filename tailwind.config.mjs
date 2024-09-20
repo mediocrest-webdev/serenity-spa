@@ -29,7 +29,8 @@ export default {
         'lg': '1.5em',        // 24dp equivalent
         'xl': '2em',          // 32dp equivalent
         '2xl': '3em',         // 48dp equivalent
-        '3xl': '4em',         // 64dp equivalent
+        '3xl': '4em',
+        '4xl': '5em',
       }
     },
     container: {

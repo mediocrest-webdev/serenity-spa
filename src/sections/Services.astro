@@ -1,58 +1,54 @@
 ---
 import Button from "../components/Button.astro";
-
-
 ---
-<!-- ============================================ -->
-<!--                 Side By Side                 -->
-<!-- ============================================ -->
-
   <section id="services" class="py-6 sm:py-8 lg:py-12">
       <!-- text - start -->
       <div class="mb-10 md:mb-16">
-        <span class="block text-lg text-center font-semibold text-accent mb-xs">Services</span>
-        <h2 class="mb-4 text-center text-2xl font-medium text-gray-800 lg:text-4xl leading-none tracking-tight">Spa Treatments We Offer</h2>
-  
-        <p class="mx-auto max-w-screen-md text-center text-gray-700 md:text-lg">This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text but is random or otherwise generated.</p>
+        <span class="block text-sm font-semibold tracking-widest text-center text-accent mb-xs">SERVICES</span>
+        <hgroup class="space-y-4">
+          <h2 class="text-4xl font-semibold leading-none tracking-tight text-center text-secondary">Spa Treatments We Offer</h2>
+          <p class="mx-auto text-base leading-normal text-center text-gray-700">Escape the hustle and unwind in a space designed for ultimate relaxation. At Serenity Spa, we offer a range of services to rejuvenate your mind, body, and spirit.
+          </p>
+        </hgroup>
       </div>
       <!-- text - end -->
   
       <div class="grid gap-6 sm:grid-cols-3">
         <!-- product - start -->
-        <didiv class="group relative flex h-80 items-end overflow-hidden rounded-lg bg-gray-100 p-4 shadow-lg">
-          <img src="./images/massage-service.jpg" loading="lazy" alt="Woman being massaged" title="Woman being massaged" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+        <div class="relative flex items-end p-4 overflow-hidden bg-gray-100 rounded-lg shadow-lg group h-80">
+          <img src="./images/massage-service.jpg" width="400" height="320" loading="lazy" alt="Woman being massaged" title="Woman being massaged" class="absolute inset-0 object-cover object-center transition duration-200 size-full group-hover:scale-110" />
   
-          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
+          <div class="absolute inset-0 opacity-50 pointer-events-none bg-gradient-to-t from-gray-800 via-transparent to-transparent"></div>
   
-          <div class="relative flex flex-col">
-            <span class="text-lg lg:text-xl text-white font-semibold">Massages</span>
-            <span class="text-gray-300">From Swedish to Deep Tissue, our massages are tailored to provide relief and relaxation</span>
+          <div class="relative flex flex-col space-y-2">
+            <h3 class="text-lg font-semibold text-white">Massages</h3>
+            <h4 class="text-base text-slate-50">From Swedish to Deep Tissue, our massages are tailored to provide relief and relaxation</h4>
           </div>
-        </didiv>
+        </div>
         <!-- product - end -->
   
         <!-- product - start -->
-        <div class="group relative flex h-80 items-end overflow-hidden rounded-lg bg-gray-100 p-4 shadow-lg">
-          <img src="./images/facial-service.jpg" loading="lazy" alt="Woman receiving a facial treatment" title="Woman receiving a facial treatment" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+        <div class="relative flex items-end p-4 overflow-hidden bg-gray-100 rounded-lg shadow-lg group h-80">
+          <img src="./images/facial-service.jpg" width="400" height="320" loading="lazy" alt="Woman receiving a facial treatment" title="Woman receiving a facial treatment" class="absolute inset-0 object-cover object-center w-full h-full transition duration-200 group-hover:scale-110" />
   
-          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
+          <div class="absolute inset-0 opacity-50 pointer-events-none bg-gradient-to-t from-gray-800 via-transparent to-transparent"></div>
   
-          <div class="relative flex flex-col">
-            <span class="text-lg lg:text-xl text-white font-semibold">Facials</span>
-            <span class="text-gray-300">Revitalize your skin with our personalized facial treatments designed for all skin types</span>
+          <div class="relative flex flex-col space-y-2">
+            <h3 class="text-lg font-semibold text-white lg:">Facials</h3>
+            <h4 class="text-base text-slate-50">Revitalize your skin with our personalized facial treatments designed for all skin types</h4>
           </div>
         </div>
         <!-- product - end -->
 
         <!-- product - start -->
-        <div class="group relative flex h-80 items-end overflow-hidden rounded-lg bg-gray-100 p-4 shadow-lg">
-          <img src="./images/hero-img.jpg" loading="lazy" alt="Group of woman doing wax treatment for client underarm" title="Group of woman doing wax treatment for client underarm" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+        <div class="relative flex items-end p-4 overflow-hidden bg-gray-100 rounded-lg shadow-lg group h-80">
+          <img src="./images/hero-img.jpg" width="400" height="320" loading="lazy" alt="Group of woman doing wax treatment for client underarm" title="Group of woman doing wax treatment for client underarm" class="absolute inset-0 object-cover object-center w-full h-full transition duration-200 group-hover:scale-110" />
   
-          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
+          <div class="absolute inset-0 opacity-50 pointer-events-none bg-gradient-to-t from-gray-800 via-transparent to-transparent"></div>
   
-          <div class="relative flex flex-col">
-            <span class="text-lg lg:text-xl text-white font-semibold">Waxing</span>
-            <span class="text-gray-300">Enjoy smooth, hair-free skin with our gentle and effective waxing treatments.</span>
+          <div class="relative flex flex-col space-y-2">
+            <h3 class="text-lg font-semibold text-white lg:">Waxing</h3>
+            <h4 class="text-base text-slate-50">Enjoy smooth, hair-free skin with our gentle and effective waxing treatments.</h4>
           </div>
         </div>
         <!-- product - end -->
