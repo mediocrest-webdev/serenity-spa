@@ -1,56 +1,81 @@
 ---
-import Button from "../components/Button.astro";
----
-  <section id="services" class="py-6 sm:py-8 lg:py-12">
-      <!-- text - start -->
-      <div class="mb-10 md:mb-16">
-        <span class="block text-sm font-semibold tracking-widest text-center text-accent mb-xs">SERVICES</span>
-        <hgroup class="space-y-4">
-          <h2 class="text-4xl font-semibold leading-none tracking-tight text-center text-secondary">Spa Treatments We Offer</h2>
-          <p class="mx-auto text-base leading-normal text-center text-gray-700">Escape the hustle and unwind in a space designed for ultimate relaxation. At Serenity Spa, we offer a range of services to rejuvenate your mind, body, and spirit.
-          </p>
-        </hgroup>
-      </div>
-      <!-- text - end -->
-  
-      <div class="grid gap-6 sm:grid-cols-3">
-        <!-- product - start -->
-        <div class="relative flex items-end p-4 overflow-hidden bg-gray-100 rounded-lg shadow-lg group h-80">
-          <img src="./images/massage-service.jpg" width="400" height="320" loading="lazy" alt="Woman being massaged" title="Woman being massaged" class="absolute inset-0 object-cover object-center transition duration-200 size-full group-hover:scale-110" />
-  
-          <div class="absolute inset-0 opacity-50 pointer-events-none bg-gradient-to-t from-gray-800 via-transparent to-transparent"></div>
-  
-          <div class="relative flex flex-col space-y-2">
-            <h3 class="text-lg font-semibold text-white">Massages</h3>
-            <h4 class="text-base text-slate-50">From Swedish to Deep Tissue, our massages are tailored to provide relief and relaxation</h4>
-          </div>
-        </div>
-        <!-- product - end -->
-  
-        <!-- product - start -->
-        <div class="relative flex items-end p-4 overflow-hidden bg-gray-100 rounded-lg shadow-lg group h-80">
-          <img src="./images/facial-service.jpg" width="400" height="320" loading="lazy" alt="Woman receiving a facial treatment" title="Woman receiving a facial treatment" class="absolute inset-0 object-cover object-center w-full h-full transition duration-200 group-hover:scale-110" />
-  
-          <div class="absolute inset-0 opacity-50 pointer-events-none bg-gradient-to-t from-gray-800 via-transparent to-transparent"></div>
-  
-          <div class="relative flex flex-col space-y-2">
-            <h3 class="text-lg font-semibold text-white lg:">Facials</h3>
-            <h4 class="text-base text-slate-50">Revitalize your skin with our personalized facial treatments designed for all skin types</h4>
-          </div>
-        </div>
-        <!-- product - end -->
+import { Image } from "astro:assets";
 
-        <!-- product - start -->
-        <div class="relative flex items-end p-4 overflow-hidden bg-gray-100 rounded-lg shadow-lg group h-80">
-          <img src="./images/hero-img.jpg" width="400" height="320" loading="lazy" alt="Group of woman doing wax treatment for client underarm" title="Group of woman doing wax treatment for client underarm" class="absolute inset-0 object-cover object-center w-full h-full transition duration-200 group-hover:scale-110" />
-  
-          <div class="absolute inset-0 opacity-50 pointer-events-none bg-gradient-to-t from-gray-800 via-transparent to-transparent"></div>
-  
-          <div class="relative flex flex-col space-y-2">
-            <h3 class="text-lg font-semibold text-white lg:">Waxing</h3>
-            <h4 class="text-base text-slate-50">Enjoy smooth, hair-free skin with our gentle and effective waxing treatments.</h4>
-          </div>
-        </div>
-        <!-- product - end -->
+import Waxing from "../images/5.jpg";
+import Facial from "../images/facial-service.jpg";
+import Massage from "../images/massage-service.jpg";
+---
+
+<section id="services" class="rounded-xl space-y-8 mb-12 md:mb-24">
+  <!-- Header -->
+  <div class="mb-lg lg:flex items-center justify-between ">
+    <header class="space-y-2 mb-2 md:mb-4">
+      <span class="block text-xs font-semibold tracking-widest text-accent">SERVICES</span>
+      <h2 class="text-4xl leading-none tracking-tight text-secondary">
+        Spa Treatments We Offer
+      </h2>
+    </header>
+    <p class="text-sm sm:text-base text-contrast max-w-lg md:max-w-xl">
+      Escape the hustle and unwind in a space designed for ultimate relaxation. At Serenity Spa, we
+      offer a range of services to rejuvenate your mind, body, and spirit.
+    </p>
+  </div>
+  <!-- Header End -->
+
+  <!-- Services -->
+  <div class="grid gap-lg sm:grid-cols-3">
+    <!-- Massage Service -->
+    <div class="relative flex items-end  overflow-hidden rounded-lg shadow-md group aspect-square">
+      <Image
+        src={Massage}
+        loading="lazy"
+        alt="Woman being massaged"
+        title="Woman being massaged"
+        class="absolute inset-0 object-cover object-center size-full transition-transform duration-200 group-hover:scale-110"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+      <div class="relative p-4 space-y-2">
+        <h3 class="text-body font-semibold text-white">Massages</h3>
+        <p class="text-base text-white">
+          From Swedish to Deep Tissue, our massages are tailored to provide relief and relaxation.
+        </p>
+      </div>
     </div>
-  </section>
+
+    <!-- Facial Service -->
+    <div class="relative flex items-end  overflow-hidden rounded-lg shadow-md group aspect-square">
+      <Image
+        src={Facial}
+        alt="Woman receiving a facial treatment"
+        title="Woman receiving a facial treatment"
+        class="absolute inset-0 object-cover object-center w-full h-full transition-transform duration-200 group-hover:scale-110"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+      <div class="relative p-4 space-y-2">
+        <h3 class="text-lg font-semibold text-white">Facials</h3>
+        <p class="text-base text-white">
+          Revitalize your skin with our personalized facial treatments designed for all skin types.
+        </p>
+      </div>
+    </div>
+
+    <!-- Waxing Service -->
+    <div class="relative flex items-end  overflow-hidden rounded-lg shadow-md group aspect-square">
+      <Image
+        src={Waxing}
+        alt="Group of women doing wax treatment for client's underarm"
+        title="Group of women doing wax treatment for client's underarm"
+        class="absolute inset-0 object-cover object-center w-full h-full transition-transform duration-200 group-hover:scale-110"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+      <div class="relative p-4 space-y-2">
+        <h3 class="text-lg font-semibold text-white">Waxing</h3>
+        <p class="text-base text-white">
+          Enjoy smooth, hair-free skin with our gentle and effective waxing treatments.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- Services End -->
+</section>
+

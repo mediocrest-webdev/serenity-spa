@@ -8,6 +8,7 @@ export default {
         secondary: "hsl(105, 50%, 10%)",
         tertiary: "hsl(45, 80%, 20%)",
         accent: "hsl(165, 80%, 20%)",
+        contrast:"hsl(105, 0%, 20%)"
       },
       fontSize: {
         xs: "0.75em", // Small text for captions

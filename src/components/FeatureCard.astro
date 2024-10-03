@@ -1,0 +1,26 @@
+---
+const {path, title, description} = Astro.props;
+---
+
+<li
+  class="relative flex flex-col items-center w-full p-6 transition-transform duration-300 ease-in-out bg-white border-2 rounded-lg shadow-sm hover:scale-105 hover:shadow-md md:w-auto"
+>
+  <div class="flex flex-col gap-4 items-center">
+    <div class="flex items-center justify-center p-4 rounded-full bg-accent">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="24px"
+        viewBox="0 -960 960 960"
+        width="24px"
+        fill="#e8eaed"
+        ><path
+          d={path}
+        ></path></svg
+      >
+    </div>
+    <div class="flex flex-col text-center">
+      <h3 class="mb-0 text-lg font-semibold text-gray-900">{title}</h3>
+      <h4 class="text-base text-gray-700">{description}</h4>
+    </div>
+  </div>
+</li>
