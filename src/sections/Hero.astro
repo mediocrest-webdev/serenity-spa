@@ -11,7 +11,7 @@ import HeroImgM from "../images/hero-image-m.jpg";
     <h1 class="text-4xl font-medium tracking-tight leading-none sm:text-center ">
       Premium Massage, Facial, Waxing, and Spa Services
     </h1>
-    <p class="text-sm sm:text-base text-contrast max-w-lg sm:text-center">
+    <p class="text-base sm:text-lg text-contrast max-w-lg sm:text-center">
       Serenity Spa provides expert spa services that rejuvenate your body, soothe your mind, and promote overall well-being.
     </p>
   </div>
@@ -22,12 +22,16 @@ import HeroImgM from "../images/hero-image-m.jpg";
       alt="topless woman lying on bed getting massage"
       title="topless woman lying on bed getting massage"
       class="hidden md:block w-full h-80 sm:h-[480px] object-cover rounded-xl"
+      loading="eager"
+      fetchpriority='high'
     />
     <Picture
       src={HeroImgM}
       alt="topless woman lying on bed getting massage"
       title="topless woman lying on bed getting massage"
       class="md:hidden w-full h-80 sm:h-[480px] object-cover rounded-xl"
+      loading="eager"
+      fetchpriority='high'
     />
   </div>
 </section>
