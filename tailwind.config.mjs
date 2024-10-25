@@ -32,7 +32,16 @@ export default {
         '2xl': '3em',         // 48dp equivalent
         '3xl': '4em',
         '4xl': '5em',
-      }
+      },
+      fontFamily: {
+				'light': ['Satoshi-Light', 'sans-serif'],
+				'regular': ['Satoshi-Regular', 'sans-serif'],
+				'medium': ['Satoshi-Medium', 'sans-serif'],
+				'semibold': ['Satoshi-Semibold', 'sans-serif'],
+				'bold': ['Satoshi-Bold', 'sans-serif'],
+				'black': ['Satoshi-Black', 'sans-serif'],
+
+			},
     },
     container: {
       center: true, // This centers the container horizontally
