@@ -1,26 +1,7 @@
-/**
-* @license
-*
-* Font Family: Satoshi
-* Designed by: Deni Anggara
-* URL: https://www.fontshare.com/fonts/satoshi
-* © 2024 Indian Type Foundry
-*
-* Satoshi Light 
-* Satoshi Regular 
-* Satoshi Medium 
-* Satoshi Bold 
-* Satoshi Black 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-*
-*/
-@font-face {
-    font-family: 'Satoshi-Light';
-    src: url('/Satoshi-Light.woff2') format('woff2');
-    font-weight: 300;
-    font-display: swap;
-    font-style: normal;
-  }
   @font-face {
     font-family: 'Satoshi-Regular';
     src: url('/Satoshi-Regular.woff2') format('woff2');
